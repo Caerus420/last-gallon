@@ -1,0 +1,1094 @@
+{
+  "game": "Last Gallon: Zombie Car Smash",
+  "version": "0.2.0",
+  "decimals": 4,
+  "paid_random_items": false,
+  "how_boxes_are_got": "Boxes are earned only: driving, GALLON RUN stars, horde nights held and first stage clears. Money and GOLD BARS never buy a box. What a box holds is fixed when it is earned. Boxes arrive sealed: you can peek inside any time, and the full contents are always shown before any GOLD BARS are spent on a box. GOLD BARS can only open it sooner.",
+  "reference_player": "These are the odds before any CREW lean or pity: no cards owned, no CREW pinned, pity counters at 0. The game's ODDS sheet shows each player's own odds from the same roll.",
+  "crew_lean": "A ROADSIDE, HARDENED or ELITE stack is one of the player's CREW cards of that rarity half the time (the 4 pinned cards, or the 4 survivors who ran most recently), else even over every card of that rarity. LEGEND stacks are always even.",
+  "pity": {
+    "elite": "The 6th TOOLBOX-or-better box in a row without an ELITE line always has one.",
+    "legend": "The 40th TOOLBOX-or-better box in a row without a LEGEND brings the player's WISHLIST character (or the first LEGEND character not owned; in a GUN CASE a LEGEND gun not owned).",
+    "rules": "Pity is counted when a box is earned and never resets or expires."
+  },
+  "legend_gate": "LEGEND lines open once stage 3 has been cleared.",
+  "daily_limit": "At most 8 boxes a day from driving, runs and nights; past that the meter pays scrap instead. Paying never changes it.",
+  "first_clears": "The first clear of a stage gives a GUN CASE (an ARMY CRATE at stages 5, 10 and 15), once per install.",
+  "boxes": [
+    {
+      "type": "footlocker",
+      "shown": "FOOTLOCKER",
+      "unlock_hours": 3,
+      "guns_only": false,
+      "lines": [
+        {
+          "rarity": "roadside",
+          "shown": "ROADSIDE",
+          "copies": 12,
+          "stacks": 2,
+          "chance": "100.0000",
+          "chance_before_stage_3": "100.0000"
+        },
+        {
+          "rarity": "hardened",
+          "shown": "HARDENED",
+          "copies": 2,
+          "stacks": 1,
+          "chance": "60.0000",
+          "chance_before_stage_3": "60.0000"
+        },
+        {
+          "rarity": "elite",
+          "shown": "ELITE",
+          "copies": 1,
+          "stacks": 1,
+          "chance": "3.0000",
+          "chance_before_stage_3": "3.0000"
+        },
+        {
+          "rarity": "legend",
+          "shown": "LEGEND",
+          "copies": 1,
+          "stacks": 1,
+          "chance": "0.1500",
+          "chance_before_stage_3": "0.0000"
+        }
+      ],
+      "cards": [
+        {
+          "card": "role:shooter",
+          "name": "SHOOTER CARDS",
+          "kind": "copies for any rescued SHOOTER",
+          "rarity": "roadside",
+          "chance": "20.9877"
+        },
+        {
+          "card": "role:runner",
+          "name": "RUNNER CARDS",
+          "kind": "copies for any rescued RUNNER",
+          "rarity": "roadside",
+          "chance": "20.9877"
+        },
+        {
+          "card": "role:tinker",
+          "name": "TINKER CARDS",
+          "kind": "copies for any rescued TINKER",
+          "rarity": "roadside",
+          "chance": "20.9877"
+        },
+        {
+          "card": "role:medic",
+          "name": "MEDIC CARDS",
+          "kind": "copies for any rescued MEDIC",
+          "rarity": "roadside",
+          "chance": "20.9877"
+        },
+        {
+          "card": "role:hauler",
+          "name": "HAULER CARDS",
+          "kind": "copies for any rescued HAULER",
+          "rarity": "roadside",
+          "chance": "20.9877"
+        },
+        {
+          "card": "g:duty_pistol",
+          "name": "DUTY PISTOL",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "20.9877"
+        },
+        {
+          "card": "g:street_smg",
+          "name": "STREET SMG",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "20.9877"
+        },
+        {
+          "card": "g:sawn_off",
+          "name": "SAWN-OFF",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "20.9877"
+        },
+        {
+          "card": "g:tape_mag",
+          "name": "TAPE-MAG",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "20.9877"
+        },
+        {
+          "card": "c:marlowe",
+          "name": "MARLOWE",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "6.0000"
+        },
+        {
+          "card": "c:bo_hadley",
+          "name": "BO HADLEY",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "6.0000"
+        },
+        {
+          "card": "c:doyle",
+          "name": "DOYLE",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "6.0000"
+        },
+        {
+          "card": "c:goldie",
+          "name": "GOLDIE",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "6.0000"
+        },
+        {
+          "card": "c:baxter",
+          "name": "BAXTER",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "6.0000"
+        },
+        {
+          "card": "g:six_gun",
+          "name": "SIX-GUN",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "6.0000"
+        },
+        {
+          "card": "g:quiet_smg",
+          "name": "QUIET SMG",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "6.0000"
+        },
+        {
+          "card": "g:service_rifle",
+          "name": "SERVICE RIFLE",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "6.0000"
+        },
+        {
+          "card": "g:deer_rifle",
+          "name": "DEER RIFLE",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "6.0000"
+        },
+        {
+          "card": "g:crossbow",
+          "name": "CROSSBOW",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "6.0000"
+        },
+        {
+          "card": "c:rae",
+          "name": "RAE",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "0.3333"
+        },
+        {
+          "card": "c:knox",
+          "name": "KNOX",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "0.3333"
+        },
+        {
+          "card": "c:milo",
+          "name": "MILO",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "0.3333"
+        },
+        {
+          "card": "c:mother_odile",
+          "name": "MOTHER ODILE",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "0.3333"
+        },
+        {
+          "card": "g:hand_cannon",
+          "name": "HAND CANNON",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "0.3333"
+        },
+        {
+          "card": "g:grease_gun",
+          "name": "GREASE GUN",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "0.3333"
+        },
+        {
+          "card": "g:ranger_rifle",
+          "name": "RANGER RIFLE",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "0.3333"
+        },
+        {
+          "card": "g:sniper_rifle",
+          "name": "SNIPER RIFLE",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "0.3333"
+        },
+        {
+          "card": "g:belt_fed",
+          "name": "BELT-FED",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "0.3333"
+        },
+        {
+          "card": "c:wes",
+          "name": "WES",
+          "kind": "named character",
+          "rarity": "legend",
+          "chance": "0.0214"
+        },
+        {
+          "card": "c:okafor",
+          "name": "OKAFOR",
+          "kind": "named character",
+          "rarity": "legend",
+          "chance": "0.0214"
+        },
+        {
+          "card": "c:pockets",
+          "name": "POCKETS",
+          "kind": "named character",
+          "rarity": "legend",
+          "chance": "0.0214"
+        },
+        {
+          "card": "g:junk_minigun",
+          "name": "JUNK MINIGUN",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.0214"
+        },
+        {
+          "card": "g:fireworks_launcher",
+          "name": "FIREWORKS LAUNCHER",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.0214"
+        },
+        {
+          "card": "g:hand_flamer",
+          "name": "HAND FLAMER",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.0214"
+        },
+        {
+          "card": "g:spear_gun",
+          "name": "SPEAR GUN",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.0214"
+        }
+      ],
+      "also": [
+        "SCRAP: 0.15 x a drive's road scrap"
+      ]
+    },
+    {
+      "type": "toolbox",
+      "shown": "TOOLBOX",
+      "unlock_hours": 8,
+      "guns_only": false,
+      "lines": [
+        {
+          "rarity": "roadside",
+          "shown": "ROADSIDE",
+          "copies": 30,
+          "stacks": 3,
+          "chance": "100.0000",
+          "chance_before_stage_3": "100.0000"
+        },
+        {
+          "rarity": "hardened",
+          "shown": "HARDENED",
+          "copies": 5,
+          "stacks": 2,
+          "chance": "100.0000",
+          "chance_before_stage_3": "100.0000"
+        },
+        {
+          "rarity": "elite",
+          "shown": "ELITE",
+          "copies": 2,
+          "stacks": 1,
+          "chance": "20.0000",
+          "chance_before_stage_3": "20.0000"
+        },
+        {
+          "rarity": "legend",
+          "shown": "LEGEND",
+          "copies": 1,
+          "stacks": 1,
+          "chance": "0.8000",
+          "chance_before_stage_3": "0.0000"
+        }
+      ],
+      "cards": [
+        {
+          "card": "role:shooter",
+          "name": "SHOOTER CARDS",
+          "kind": "copies for any rescued SHOOTER",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "role:runner",
+          "name": "RUNNER CARDS",
+          "kind": "copies for any rescued RUNNER",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "role:tinker",
+          "name": "TINKER CARDS",
+          "kind": "copies for any rescued TINKER",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "role:medic",
+          "name": "MEDIC CARDS",
+          "kind": "copies for any rescued MEDIC",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "role:hauler",
+          "name": "HAULER CARDS",
+          "kind": "copies for any rescued HAULER",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "g:duty_pistol",
+          "name": "DUTY PISTOL",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "g:street_smg",
+          "name": "STREET SMG",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "g:sawn_off",
+          "name": "SAWN-OFF",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "g:tape_mag",
+          "name": "TAPE-MAG",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "c:marlowe",
+          "name": "MARLOWE",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "c:bo_hadley",
+          "name": "BO HADLEY",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "c:doyle",
+          "name": "DOYLE",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "c:goldie",
+          "name": "GOLDIE",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "c:baxter",
+          "name": "BAXTER",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "g:six_gun",
+          "name": "SIX-GUN",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "g:quiet_smg",
+          "name": "QUIET SMG",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "g:service_rifle",
+          "name": "SERVICE RIFLE",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "g:deer_rifle",
+          "name": "DEER RIFLE",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "g:crossbow",
+          "name": "CROSSBOW",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "c:rae",
+          "name": "RAE",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "2.2222"
+        },
+        {
+          "card": "c:knox",
+          "name": "KNOX",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "2.2222"
+        },
+        {
+          "card": "c:milo",
+          "name": "MILO",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "2.2222"
+        },
+        {
+          "card": "c:mother_odile",
+          "name": "MOTHER ODILE",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "2.2222"
+        },
+        {
+          "card": "g:hand_cannon",
+          "name": "HAND CANNON",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "2.2222"
+        },
+        {
+          "card": "g:grease_gun",
+          "name": "GREASE GUN",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "2.2222"
+        },
+        {
+          "card": "g:ranger_rifle",
+          "name": "RANGER RIFLE",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "2.2222"
+        },
+        {
+          "card": "g:sniper_rifle",
+          "name": "SNIPER RIFLE",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "2.2222"
+        },
+        {
+          "card": "g:belt_fed",
+          "name": "BELT-FED",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "2.2222"
+        },
+        {
+          "card": "c:wes",
+          "name": "WES",
+          "kind": "named character",
+          "rarity": "legend",
+          "chance": "0.1143"
+        },
+        {
+          "card": "c:okafor",
+          "name": "OKAFOR",
+          "kind": "named character",
+          "rarity": "legend",
+          "chance": "0.1143"
+        },
+        {
+          "card": "c:pockets",
+          "name": "POCKETS",
+          "kind": "named character",
+          "rarity": "legend",
+          "chance": "0.1143"
+        },
+        {
+          "card": "g:junk_minigun",
+          "name": "JUNK MINIGUN",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.1143"
+        },
+        {
+          "card": "g:fireworks_launcher",
+          "name": "FIREWORKS LAUNCHER",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.1143"
+        },
+        {
+          "card": "g:hand_flamer",
+          "name": "HAND FLAMER",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.1143"
+        },
+        {
+          "card": "g:spear_gun",
+          "name": "SPEAR GUN",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.1143"
+        }
+      ],
+      "also": [
+        "SCRAP: 0.40 x a drive's road scrap"
+      ]
+    },
+    {
+      "type": "gun_case",
+      "shown": "GUN CASE",
+      "unlock_hours": 12,
+      "guns_only": true,
+      "lines": [
+        {
+          "rarity": "roadside",
+          "shown": "ROADSIDE",
+          "copies": 30,
+          "stacks": 2,
+          "chance": "100.0000",
+          "chance_before_stage_3": "100.0000"
+        },
+        {
+          "rarity": "hardened",
+          "shown": "HARDENED",
+          "copies": 8,
+          "stacks": 2,
+          "chance": "100.0000",
+          "chance_before_stage_3": "100.0000"
+        },
+        {
+          "rarity": "elite",
+          "shown": "ELITE",
+          "copies": 3,
+          "stacks": 1,
+          "chance": "100.0000",
+          "chance_before_stage_3": "100.0000"
+        },
+        {
+          "rarity": "legend",
+          "shown": "LEGEND",
+          "copies": 1,
+          "stacks": 1,
+          "chance": "3.0000",
+          "chance_before_stage_3": "0.0000"
+        }
+      ],
+      "cards": [
+        {
+          "card": "g:duty_pistol",
+          "name": "DUTY PISTOL",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "43.7500"
+        },
+        {
+          "card": "g:street_smg",
+          "name": "STREET SMG",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "43.7500"
+        },
+        {
+          "card": "g:sawn_off",
+          "name": "SAWN-OFF",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "43.7500"
+        },
+        {
+          "card": "g:tape_mag",
+          "name": "TAPE-MAG",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "43.7500"
+        },
+        {
+          "card": "g:six_gun",
+          "name": "SIX-GUN",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "36.0000"
+        },
+        {
+          "card": "g:quiet_smg",
+          "name": "QUIET SMG",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "36.0000"
+        },
+        {
+          "card": "g:service_rifle",
+          "name": "SERVICE RIFLE",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "36.0000"
+        },
+        {
+          "card": "g:deer_rifle",
+          "name": "DEER RIFLE",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "36.0000"
+        },
+        {
+          "card": "g:crossbow",
+          "name": "CROSSBOW",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "36.0000"
+        },
+        {
+          "card": "g:hand_cannon",
+          "name": "HAND CANNON",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "20.0000"
+        },
+        {
+          "card": "g:grease_gun",
+          "name": "GREASE GUN",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "20.0000"
+        },
+        {
+          "card": "g:ranger_rifle",
+          "name": "RANGER RIFLE",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "20.0000"
+        },
+        {
+          "card": "g:sniper_rifle",
+          "name": "SNIPER RIFLE",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "20.0000"
+        },
+        {
+          "card": "g:belt_fed",
+          "name": "BELT-FED",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "20.0000"
+        },
+        {
+          "card": "g:junk_minigun",
+          "name": "JUNK MINIGUN",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.7500"
+        },
+        {
+          "card": "g:fireworks_launcher",
+          "name": "FIREWORKS LAUNCHER",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.7500"
+        },
+        {
+          "card": "g:hand_flamer",
+          "name": "HAND FLAMER",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.7500"
+        },
+        {
+          "card": "g:spear_gun",
+          "name": "SPEAR GUN",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "0.7500"
+        }
+      ],
+      "also": [
+        "SCRAP: 0.80 x a drive's road scrap",
+        "2 GOLD BARS"
+      ]
+    },
+    {
+      "type": "army_crate",
+      "shown": "ARMY CRATE",
+      "unlock_hours": 24,
+      "guns_only": false,
+      "lines": [
+        {
+          "rarity": "roadside",
+          "shown": "ROADSIDE",
+          "copies": 80,
+          "stacks": 3,
+          "chance": "100.0000",
+          "chance_before_stage_3": "100.0000"
+        },
+        {
+          "rarity": "hardened",
+          "shown": "HARDENED",
+          "copies": 16,
+          "stacks": 2,
+          "chance": "100.0000",
+          "chance_before_stage_3": "100.0000"
+        },
+        {
+          "rarity": "elite",
+          "shown": "ELITE",
+          "copies": 6,
+          "stacks": 2,
+          "chance": "100.0000",
+          "chance_before_stage_3": "100.0000"
+        },
+        {
+          "rarity": "legend",
+          "shown": "LEGEND",
+          "copies": 1,
+          "stacks": 1,
+          "chance": "10.0000",
+          "chance_before_stage_3": "0.0000"
+        }
+      ],
+      "cards": [
+        {
+          "card": "role:shooter",
+          "name": "SHOOTER CARDS",
+          "kind": "copies for any rescued SHOOTER",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "role:runner",
+          "name": "RUNNER CARDS",
+          "kind": "copies for any rescued RUNNER",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "role:tinker",
+          "name": "TINKER CARDS",
+          "kind": "copies for any rescued TINKER",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "role:medic",
+          "name": "MEDIC CARDS",
+          "kind": "copies for any rescued MEDIC",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "role:hauler",
+          "name": "HAULER CARDS",
+          "kind": "copies for any rescued HAULER",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "g:duty_pistol",
+          "name": "DUTY PISTOL",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "g:street_smg",
+          "name": "STREET SMG",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "g:sawn_off",
+          "name": "SAWN-OFF",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "g:tape_mag",
+          "name": "TAPE-MAG",
+          "kind": "gun",
+          "rarity": "roadside",
+          "chance": "29.7668"
+        },
+        {
+          "card": "c:marlowe",
+          "name": "MARLOWE",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "c:bo_hadley",
+          "name": "BO HADLEY",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "c:doyle",
+          "name": "DOYLE",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "c:goldie",
+          "name": "GOLDIE",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "c:baxter",
+          "name": "BAXTER",
+          "kind": "named character",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "g:six_gun",
+          "name": "SIX-GUN",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "g:quiet_smg",
+          "name": "QUIET SMG",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "g:service_rifle",
+          "name": "SERVICE RIFLE",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "g:deer_rifle",
+          "name": "DEER RIFLE",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "g:crossbow",
+          "name": "CROSSBOW",
+          "kind": "gun",
+          "rarity": "hardened",
+          "chance": "19.0000"
+        },
+        {
+          "card": "c:rae",
+          "name": "RAE",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "20.9877"
+        },
+        {
+          "card": "c:knox",
+          "name": "KNOX",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "20.9877"
+        },
+        {
+          "card": "c:milo",
+          "name": "MILO",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "20.9877"
+        },
+        {
+          "card": "c:mother_odile",
+          "name": "MOTHER ODILE",
+          "kind": "named character",
+          "rarity": "elite",
+          "chance": "20.9877"
+        },
+        {
+          "card": "g:hand_cannon",
+          "name": "HAND CANNON",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "20.9877"
+        },
+        {
+          "card": "g:grease_gun",
+          "name": "GREASE GUN",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "20.9877"
+        },
+        {
+          "card": "g:ranger_rifle",
+          "name": "RANGER RIFLE",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "20.9877"
+        },
+        {
+          "card": "g:sniper_rifle",
+          "name": "SNIPER RIFLE",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "20.9877"
+        },
+        {
+          "card": "g:belt_fed",
+          "name": "BELT-FED",
+          "kind": "gun",
+          "rarity": "elite",
+          "chance": "20.9877"
+        },
+        {
+          "card": "c:wes",
+          "name": "WES",
+          "kind": "named character",
+          "rarity": "legend",
+          "chance": "1.4286"
+        },
+        {
+          "card": "c:okafor",
+          "name": "OKAFOR",
+          "kind": "named character",
+          "rarity": "legend",
+          "chance": "1.4286"
+        },
+        {
+          "card": "c:pockets",
+          "name": "POCKETS",
+          "kind": "named character",
+          "rarity": "legend",
+          "chance": "1.4286"
+        },
+        {
+          "card": "g:junk_minigun",
+          "name": "JUNK MINIGUN",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "1.4286"
+        },
+        {
+          "card": "g:fireworks_launcher",
+          "name": "FIREWORKS LAUNCHER",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "1.4286"
+        },
+        {
+          "card": "g:hand_flamer",
+          "name": "HAND FLAMER",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "1.4286"
+        },
+        {
+          "card": "g:spear_gun",
+          "name": "SPEAR GUN",
+          "kind": "gun",
+          "rarity": "legend",
+          "chance": "1.4286"
+        }
+      ],
+      "also": [
+        "SCRAP: 1.50 x a drive's road scrap",
+        "3 ELITE WILD CARDS",
+        "10 GOLD BARS"
+      ]
+    }
+  ],
+  "mix_by_source": {
+    "road": {
+      "shown": "DRIVING (the ROAD meter: about 4.5 stage lengths driven)",
+      "cycle": 100,
+      "boxes": {
+        "footlocker": "58.0000",
+        "toolbox": "32.0000",
+        "gun_case": "8.0000",
+        "army_crate": "2.0000"
+      }
+    },
+    "run": {
+      "shown": "GALLON RUN (6 stars)",
+      "cycle": 100,
+      "boxes": {
+        "footlocker": "40.0000",
+        "toolbox": "42.0000",
+        "gun_case": "13.0000",
+        "army_crate": "5.0000"
+      }
+    },
+    "night": {
+      "shown": "HORDE NIGHTS (every 2nd night held)",
+      "cycle": 100,
+      "boxes": {
+        "toolbox": "60.0000",
+        "gun_case": "30.0000",
+        "army_crate": "10.0000"
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Last Gallon: Box odds</title>
+<meta name="description" content="The odds of every box in Last Gallon 0.2.0, to 4 decimals.">
+<style>
+  :root { --bg: #0b0908; --panel: #15110f; --text: #ede3c9; --dim: #b7ad97; --hazard: #ffc91e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { color: var(--hazard); font-size: 2rem; line-height: 1.2; margin: 0 0 4px; }
+  h2 { color: var(--hazard); font-size: 1.3rem; margin: 36px 0 8px; }
+  h3 { font-size: 1.05rem; margin: 18px 0 6px; }
+  .meta, .dim { color: var(--dim); }
+  .stripe { height: 8px; margin: 16px 0 24px; background: repeating-linear-gradient(-45deg, var(--hazard) 0 10px, #000 10px 20px); }
+  table { width: 100%; border-collapse: collapse; margin: 6px 0 12px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 5px 8px; border-bottom: 1px solid #3a2a1e; }
+  th { color: var(--dim); font-weight: 600; }
+  td.n { text-align: right; white-space: nowrap; }
+  .wrap { overflow-x: auto; }
+  .roadside { color: #9AA3A8; } .hardened { color: #6FAEE8; } .elite { color: #B98BE6; } .legend { color: #FF7A1A; }
+  a { color: var(--hazard); }
+  footer { margin-top: 48px; color: var(--dim); font-size: .9rem; border-top: 1px solid #3a2a1e; padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Last Gallon: Box odds</h1>
+<p class="meta">Version 0.2.0 · every rate to 4 decimals · generated from the game's own roll code</p>
+<div class="stripe"></div>
+<p><strong>Boxes are earned only: driving, GALLON RUN stars, horde nights held and first stage clears. Money and GOLD BARS never buy a box. What a box holds is fixed when it is earned. Boxes arrive sealed: you can peek inside any time, and the full contents are always shown before any GOLD BARS are spent on a box. GOLD BARS can only open it sooner.</strong></p>
+<p>These are the odds before any CREW lean or pity: no cards owned, no CREW pinned, pity counters at 0. The game's ODDS sheet shows each player's own odds from the same roll.</p>
+<p>A ROADSIDE, HARDENED or ELITE stack is one of the player's CREW cards of that rarity half the time (the 4 pinned cards, or the 4 survivors who ran most recently), else even over every card of that rarity. LEGEND stacks are always even.</p>
+<h2>Pity</h2>
+<ul>
+<li>The 6th TOOLBOX-or-better box in a row without an ELITE line always has one.</li>
+<li>The 40th TOOLBOX-or-better box in a row without a LEGEND brings the player's WISHLIST character (or the first LEGEND character not owned; in a GUN CASE a LEGEND gun not owned).</li>
+<li>Pity is counted when a box is earned and never resets or expires.</li>
+<li>LEGEND lines open once stage 3 has been cleared.</li>
+</ul>
+<h2>FOOTLOCKER</h2>
+<p class="dim">Unlocks in 3 h. Every FOOTLOCKER also holds: SCRAP: 0.15 x a drive's road scrap.</p>
+<div class="wrap"><table>
+<tr><th>Rarity line</th><th>What it holds</th><th class="n">Chance</th><th class="n">Before stage 3</th></tr>
+<tr><td class="roadside">ROADSIDE</td><td>12 copies in 2 stacks</td><td class="n">100.0000%</td><td class="n">100.0000%</td></tr>
+<tr><td class="hardened">HARDENED</td><td>2 copies</td><td class="n">60.0000%</td><td class="n">60.0000%</td></tr>
+<tr><td class="elite">ELITE</td><td>1 copy</td><td class="n">3.0000%</td><td class="n">3.0000%</td></tr>
+<tr><td class="legend">LEGEND</td><td>1 copy</td><td class="n">0.1500%</td><td class="n">0.0000%</td></tr>
+</table></div>
+<h3>Chance the FOOTLOCKER holds each card</h3>
+<div class="wrap"><table>
+<tr><th>Card</th><th>Kind</th><th>Rarity</th><th class="n">Chance</th></tr>
+<tr><td>SHOOTER CARDS</td><td>copies for any rescued SHOOTER</td><td class="roadside">ROADSIDE</td><td class="n">20.9877%</td></tr>
+<tr><td>RUNNER CARDS</td><td>copies for any rescued RUNNER</td><td class="roadside">ROADSIDE</td><td class="n">20.9877%</td></tr>
+<tr><td>TINKER CARDS</td><td>copies for any rescued TINKER</td><td class="roadside">ROADSIDE</td><td class="n">20.9877%</td></tr>
+<tr><td>MEDIC CARDS</td><td>copies for any rescued MEDIC</td><td class="roadside">ROADSIDE</td><td class="n">20.9877%</td></tr>
+<tr><td>HAULER CARDS</td><td>copies for any rescued HAULER</td><td class="roadside">ROADSIDE</td><td class="n">20.9877%</td></tr>
+<tr><td>DUTY PISTOL</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">20.9877%</td></tr>
+<tr><td>STREET SMG</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">20.9877%</td></tr>
+<tr><td>SAWN-OFF</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">20.9877%</td></tr>
+<tr><td>TAPE-MAG</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">20.9877%</td></tr>
+<tr><td>MARLOWE</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">6.0000%</td></tr>
+<tr><td>BO HADLEY</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">6.0000%</td></tr>
+<tr><td>DOYLE</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">6.0000%</td></tr>
+<tr><td>GOLDIE</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">6.0000%</td></tr>
+<tr><td>BAXTER</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">6.0000%</td></tr>
+<tr><td>SIX-GUN</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">6.0000%</td></tr>
+<tr><td>QUIET SMG</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">6.0000%</td></tr>
+<tr><td>SERVICE RIFLE</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">6.0000%</td></tr>
+<tr><td>DEER RIFLE</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">6.0000%</td></tr>
+<tr><td>CROSSBOW</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">6.0000%</td></tr>
+<tr><td>RAE</td><td>named character</td><td class="elite">ELITE</td><td class="n">0.3333%</td></tr>
+<tr><td>KNOX</td><td>named character</td><td class="elite">ELITE</td><td class="n">0.3333%</td></tr>
+<tr><td>MILO</td><td>named character</td><td class="elite">ELITE</td><td class="n">0.3333%</td></tr>
+<tr><td>MOTHER ODILE</td><td>named character</td><td class="elite">ELITE</td><td class="n">0.3333%</td></tr>
+<tr><td>HAND CANNON</td><td>gun</td><td class="elite">ELITE</td><td class="n">0.3333%</td></tr>
+<tr><td>GREASE GUN</td><td>gun</td><td class="elite">ELITE</td><td class="n">0.3333%</td></tr>
+<tr><td>RANGER RIFLE</td><td>gun</td><td class="elite">ELITE</td><td class="n">0.3333%</td></tr>
+<tr><td>SNIPER RIFLE</td><td>gun</td><td class="elite">ELITE</td><td class="n">0.3333%</td></tr>
+<tr><td>BELT-FED</td><td>gun</td><td class="elite">ELITE</td><td class="n">0.3333%</td></tr>
+<tr><td>WES</td><td>named character</td><td class="legend">LEGEND</td><td class="n">0.0214%</td></tr>
+<tr><td>OKAFOR</td><td>named character</td><td class="legend">LEGEND</td><td class="n">0.0214%</td></tr>
+<tr><td>POCKETS</td><td>named character</td><td class="legend">LEGEND</td><td class="n">0.0214%</td></tr>
+<tr><td>JUNK MINIGUN</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.0214%</td></tr>
+<tr><td>FIREWORKS LAUNCHER</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.0214%</td></tr>
+<tr><td>HAND FLAMER</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.0214%</td></tr>
+<tr><td>SPEAR GUN</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.0214%</td></tr>
+</table></div>
+<h2>TOOLBOX</h2>
+<p class="dim">Unlocks in 8 h. Every TOOLBOX also holds: SCRAP: 0.40 x a drive's road scrap.</p>
+<div class="wrap"><table>
+<tr><th>Rarity line</th><th>What it holds</th><th class="n">Chance</th><th class="n">Before stage 3</th></tr>
+<tr><td class="roadside">ROADSIDE</td><td>30 copies in 3 stacks</td><td class="n">100.0000%</td><td class="n">100.0000%</td></tr>
+<tr><td class="hardened">HARDENED</td><td>5 copies in 2 stacks</td><td class="n">100.0000%</td><td class="n">100.0000%</td></tr>
+<tr><td class="elite">ELITE</td><td>2 copies</td><td class="n">20.0000%</td><td class="n">20.0000%</td></tr>
+<tr><td class="legend">LEGEND</td><td>1 copy</td><td class="n">0.8000%</td><td class="n">0.0000%</td></tr>
+</table></div>
+<h3>Chance the TOOLBOX holds each card</h3>
+<div class="wrap"><table>
+<tr><th>Card</th><th>Kind</th><th>Rarity</th><th class="n">Chance</th></tr>
+<tr><td>SHOOTER CARDS</td><td>copies for any rescued SHOOTER</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>RUNNER CARDS</td><td>copies for any rescued RUNNER</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>TINKER CARDS</td><td>copies for any rescued TINKER</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>MEDIC CARDS</td><td>copies for any rescued MEDIC</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>HAULER CARDS</td><td>copies for any rescued HAULER</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>DUTY PISTOL</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>STREET SMG</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>SAWN-OFF</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>TAPE-MAG</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>MARLOWE</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>BO HADLEY</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>DOYLE</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>GOLDIE</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>BAXTER</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>SIX-GUN</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>QUIET SMG</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>SERVICE RIFLE</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>DEER RIFLE</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>CROSSBOW</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>RAE</td><td>named character</td><td class="elite">ELITE</td><td class="n">2.2222%</td></tr>
+<tr><td>KNOX</td><td>named character</td><td class="elite">ELITE</td><td class="n">2.2222%</td></tr>
+<tr><td>MILO</td><td>named character</td><td class="elite">ELITE</td><td class="n">2.2222%</td></tr>
+<tr><td>MOTHER ODILE</td><td>named character</td><td class="elite">ELITE</td><td class="n">2.2222%</td></tr>
+<tr><td>HAND CANNON</td><td>gun</td><td class="elite">ELITE</td><td class="n">2.2222%</td></tr>
+<tr><td>GREASE GUN</td><td>gun</td><td class="elite">ELITE</td><td class="n">2.2222%</td></tr>
+<tr><td>RANGER RIFLE</td><td>gun</td><td class="elite">ELITE</td><td class="n">2.2222%</td></tr>
+<tr><td>SNIPER RIFLE</td><td>gun</td><td class="elite">ELITE</td><td class="n">2.2222%</td></tr>
+<tr><td>BELT-FED</td><td>gun</td><td class="elite">ELITE</td><td class="n">2.2222%</td></tr>
+<tr><td>WES</td><td>named character</td><td class="legend">LEGEND</td><td class="n">0.1143%</td></tr>
+<tr><td>OKAFOR</td><td>named character</td><td class="legend">LEGEND</td><td class="n">0.1143%</td></tr>
+<tr><td>POCKETS</td><td>named character</td><td class="legend">LEGEND</td><td class="n">0.1143%</td></tr>
+<tr><td>JUNK MINIGUN</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.1143%</td></tr>
+<tr><td>FIREWORKS LAUNCHER</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.1143%</td></tr>
+<tr><td>HAND FLAMER</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.1143%</td></tr>
+<tr><td>SPEAR GUN</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.1143%</td></tr>
+</table></div>
+<h2>GUN CASE</h2>
+<p class="dim">Unlocks in 12 h · guns only. Every GUN CASE also holds: SCRAP: 0.80 x a drive's road scrap, 2 GOLD BARS.</p>
+<div class="wrap"><table>
+<tr><th>Rarity line</th><th>What it holds</th><th class="n">Chance</th><th class="n">Before stage 3</th></tr>
+<tr><td class="roadside">ROADSIDE</td><td>30 copies in 2 stacks</td><td class="n">100.0000%</td><td class="n">100.0000%</td></tr>
+<tr><td class="hardened">HARDENED</td><td>8 copies in 2 stacks</td><td class="n">100.0000%</td><td class="n">100.0000%</td></tr>
+<tr><td class="elite">ELITE</td><td>3 copies</td><td class="n">100.0000%</td><td class="n">100.0000%</td></tr>
+<tr><td class="legend">LEGEND</td><td>1 copy</td><td class="n">3.0000%</td><td class="n">0.0000%</td></tr>
+</table></div>
+<h3>Chance the GUN CASE holds each card</h3>
+<div class="wrap"><table>
+<tr><th>Card</th><th>Kind</th><th>Rarity</th><th class="n">Chance</th></tr>
+<tr><td>DUTY PISTOL</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">43.7500%</td></tr>
+<tr><td>STREET SMG</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">43.7500%</td></tr>
+<tr><td>SAWN-OFF</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">43.7500%</td></tr>
+<tr><td>TAPE-MAG</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">43.7500%</td></tr>
+<tr><td>SIX-GUN</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">36.0000%</td></tr>
+<tr><td>QUIET SMG</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">36.0000%</td></tr>
+<tr><td>SERVICE RIFLE</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">36.0000%</td></tr>
+<tr><td>DEER RIFLE</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">36.0000%</td></tr>
+<tr><td>CROSSBOW</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">36.0000%</td></tr>
+<tr><td>HAND CANNON</td><td>gun</td><td class="elite">ELITE</td><td class="n">20.0000%</td></tr>
+<tr><td>GREASE GUN</td><td>gun</td><td class="elite">ELITE</td><td class="n">20.0000%</td></tr>
+<tr><td>RANGER RIFLE</td><td>gun</td><td class="elite">ELITE</td><td class="n">20.0000%</td></tr>
+<tr><td>SNIPER RIFLE</td><td>gun</td><td class="elite">ELITE</td><td class="n">20.0000%</td></tr>
+<tr><td>BELT-FED</td><td>gun</td><td class="elite">ELITE</td><td class="n">20.0000%</td></tr>
+<tr><td>JUNK MINIGUN</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.7500%</td></tr>
+<tr><td>FIREWORKS LAUNCHER</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.7500%</td></tr>
+<tr><td>HAND FLAMER</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.7500%</td></tr>
+<tr><td>SPEAR GUN</td><td>gun</td><td class="legend">LEGEND</td><td class="n">0.7500%</td></tr>
+</table></div>
+<h2>ARMY CRATE</h2>
+<p class="dim">Unlocks in 24 h. Every ARMY CRATE also holds: SCRAP: 1.50 x a drive's road scrap, 3 ELITE WILD CARDS, 10 GOLD BARS.</p>
+<div class="wrap"><table>
+<tr><th>Rarity line</th><th>What it holds</th><th class="n">Chance</th><th class="n">Before stage 3</th></tr>
+<tr><td class="roadside">ROADSIDE</td><td>80 copies in 3 stacks</td><td class="n">100.0000%</td><td class="n">100.0000%</td></tr>
+<tr><td class="hardened">HARDENED</td><td>16 copies in 2 stacks</td><td class="n">100.0000%</td><td class="n">100.0000%</td></tr>
+<tr><td class="elite">ELITE</td><td>6 copies in 2 stacks</td><td class="n">100.0000%</td><td class="n">100.0000%</td></tr>
+<tr><td class="legend">LEGEND</td><td>1 copy</td><td class="n">10.0000%</td><td class="n">0.0000%</td></tr>
+</table></div>
+<h3>Chance the ARMY CRATE holds each card</h3>
+<div class="wrap"><table>
+<tr><th>Card</th><th>Kind</th><th>Rarity</th><th class="n">Chance</th></tr>
+<tr><td>SHOOTER CARDS</td><td>copies for any rescued SHOOTER</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>RUNNER CARDS</td><td>copies for any rescued RUNNER</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>TINKER CARDS</td><td>copies for any rescued TINKER</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>MEDIC CARDS</td><td>copies for any rescued MEDIC</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>HAULER CARDS</td><td>copies for any rescued HAULER</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>DUTY PISTOL</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>STREET SMG</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>SAWN-OFF</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>TAPE-MAG</td><td>gun</td><td class="roadside">ROADSIDE</td><td class="n">29.7668%</td></tr>
+<tr><td>MARLOWE</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>BO HADLEY</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>DOYLE</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>GOLDIE</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>BAXTER</td><td>named character</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>SIX-GUN</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>QUIET SMG</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>SERVICE RIFLE</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>DEER RIFLE</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>CROSSBOW</td><td>gun</td><td class="hardened">HARDENED</td><td class="n">19.0000%</td></tr>
+<tr><td>RAE</td><td>named character</td><td class="elite">ELITE</td><td class="n">20.9877%</td></tr>
+<tr><td>KNOX</td><td>named character</td><td class="elite">ELITE</td><td class="n">20.9877%</td></tr>
+<tr><td>MILO</td><td>named character</td><td class="elite">ELITE</td><td class="n">20.9877%</td></tr>
+<tr><td>MOTHER ODILE</td><td>named character</td><td class="elite">ELITE</td><td class="n">20.9877%</td></tr>
+<tr><td>HAND CANNON</td><td>gun</td><td class="elite">ELITE</td><td class="n">20.9877%</td></tr>
+<tr><td>GREASE GUN</td><td>gun</td><td class="elite">ELITE</td><td class="n">20.9877%</td></tr>
+<tr><td>RANGER RIFLE</td><td>gun</td><td class="elite">ELITE</td><td class="n">20.9877%</td></tr>
+<tr><td>SNIPER RIFLE</td><td>gun</td><td class="elite">ELITE</td><td class="n">20.9877%</td></tr>
+<tr><td>BELT-FED</td><td>gun</td><td class="elite">ELITE</td><td class="n">20.9877%</td></tr>
+<tr><td>WES</td><td>named character</td><td class="legend">LEGEND</td><td class="n">1.4286%</td></tr>
+<tr><td>OKAFOR</td><td>named character</td><td class="legend">LEGEND</td><td class="n">1.4286%</td></tr>
+<tr><td>POCKETS</td><td>named character</td><td class="legend">LEGEND</td><td class="n">1.4286%</td></tr>
+<tr><td>JUNK MINIGUN</td><td>gun</td><td class="legend">LEGEND</td><td class="n">1.4286%</td></tr>
+<tr><td>FIREWORKS LAUNCHER</td><td>gun</td><td class="legend">LEGEND</td><td class="n">1.4286%</td></tr>
+<tr><td>HAND FLAMER</td><td>gun</td><td class="legend">LEGEND</td><td class="n">1.4286%</td></tr>
+<tr><td>SPEAR GUN</td><td>gun</td><td class="legend">LEGEND</td><td class="n">1.4286%</td></tr>
+</table></div>
+<h2>Which box you earn</h2>
+<p class="dim">Each source deals its boxes from a fixed, shuffled cycle of 100, so there are no bad streaks. At most 8 boxes a day from driving, runs and nights; past that the meter pays scrap instead. Paying never changes it. The first clear of a stage gives a GUN CASE (an ARMY CRATE at stages 5, 10 and 15), once per install.</p>
+<div class="wrap"><table>
+<tr><th>Source</th><th class="n">FOOTLOCKER</th><th class="n">TOOLBOX</th><th class="n">GUN CASE</th><th class="n">ARMY CRATE</th></tr>
+<tr><td>DRIVING (the ROAD meter: about 4.5 stage lengths driven)</td><td class="n">58.0000%</td><td class="n">32.0000%</td><td class="n">8.0000%</td><td class="n">2.0000%</td></tr>
+<tr><td>GALLON RUN (6 stars)</td><td class="n">40.0000%</td><td class="n">42.0000%</td><td class="n">13.0000%</td><td class="n">5.0000%</td></tr>
+<tr><td>HORDE NIGHTS (every 2nd night held)</td><td class="n">0.0000%</td><td class="n">60.0000%</td><td class="n">30.0000%</td><td class="n">10.0000%</td></tr>
+</table></div>
+<footer><a href="../">Last Gallon</a> &nbsp;·&nbsp; <a href="../privacy/">Privacy policy</a> &nbsp;·&nbsp; data: <a href="odds_0.2.0.json">odds_0.2.0.json</a></footer>
+</main>
+</body>
+</html>
