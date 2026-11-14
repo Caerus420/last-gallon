@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Last Gallon: Privacy Policy</title>
-<meta name="description" content="Privacy policy of the Android game Last Gallon: Zombie Car Smash.">
+<meta name="description" content="Privacy policy of the Android game Last Gallon: Zombie Car Crash.">
 <style>
   :root { --bg: #0b0908; --panel: #15110f; --text: #ede3c9; --dim: #b7ad97; --hazard: #ffc91e; --rust: #db6b1f; }
   * { box-sizing: border-box; }
@@ -23,21 +23,26 @@
 <body>
 <main>
 <h1>Last Gallon: Privacy Policy</h1>
-<p class="meta">Effective date: <span data-fill="date">October 21, 2026</span> (version 0.2.0, "Survivors &amp; Loot")<br>
+<p class="meta">Effective date: <span data-fill="date">November 14, 2026</span> (version 0.4.2)<br>
 Developer: <span data-fill="name">Studio420</span>, <span data-fill="country">South Africa</span><br>
 Contact: <a data-fill="email" href="mailto:s.koekemoer25@gmail.com">s.koekemoer25@gmail.com</a></p>
 <div class="stripe"></div>
 
-<p>This policy explains what information the mobile game <strong>Last Gallon: Zombie Car Smash</strong>
+<p>This policy explains what information the mobile game <strong>Last Gallon: Zombie Car Crash</strong>
 ("the game", "we", "us") handles, why, and what choices you have. It is short because the game
 collects very little.</p>
+<p><strong>New in version 0.4.2: play stats.</strong> The game now sends us game statistics, tied only to a random id,
+through Google Analytics for Firebase (section 6), never for players whose answer to the age question is under 18, and
+in the EEA, the UK and Switzerland only after you say yes on Google's consent form.</p>
 
 <h2>1. The short version</h2>
 <ul>
   <li>You don't need an account, and we never ask for your name, email address, phone number, contacts, photos or location.</li>
   <li>Your progress is saved <strong>on your device</strong>. We run no servers that store your game data.</li>
-  <li>The game contains <strong>no advertising and no analytics services</strong>.</li>
-  <li><strong>Purchases are handled by Google Play.</strong> We never see your payment details. The game checks each purchase <strong>on your device</strong>: there is no game server, and nothing about your purchases is sent to us.</li>
+  <li>The game has <strong>reward videos from Google AdMob, only when you tap</strong> WATCH AD: no ads between runs, no banners. Google collects some device data to show and measure them (section 4). Players under 13 see no ads, and every ad is non-personalised. <strong>AD-FREE x2</strong>, a one-time purchase, gives every reward-video bonus without the video.</li>
+  <li>The game sends us play stats through Google Analytics for Firebase, tied only to a random statistics id, so we can see where it is too hard and whether players come back. Never for players whose answer to the age question is under 18, and never before you answer it. In the EEA, the UK and Switzerland only after you say yes on Google's consent form; everywhere else you can switch them off in the bunker's settings (SHARE PLAY STATS). See section 6.</li>
+  <li>The game's own code makes no network request: the data that leaves your phone is sent by Google's libraries inside the game (AdMob, Google Play billing, Google Analytics for Firebase), as this page describes.</li>
+  <li><strong>Purchases are handled by Google Play.</strong> We never see your payment details. The game checks each purchase <strong>on your device</strong>: there is no game server. The play stats (section 6) include which product you looked at or bought and the price Google Play reports, never your payment details, order number or purchase token.</li>
 </ul>
 
 <h2>2. Information stored on your device</h2>
@@ -45,9 +50,11 @@ collects very little.</p>
 <ul>
   <li><strong>Game progress and settings:</strong> scrap, GOLD BARS, vehicles and upgrades owned, your crew and their cards, boxes, stages unlocked, distance records, run statistics and your settings (for example touch controls, vibration, tilt steering, graphics quality).</li>
   <li><strong>Tutorial hints</strong> you have already seen, the <strong>daily jobs</strong> and the <strong>daily supply drop</strong> calendar.</li>
-  <li><strong>Your answer to the SHOP's age question</strong>, kept only as an age range (see section 5).</li>
-  <li><strong>Purchase records:</strong> what you own, what you spent GOLD BARS on, this month's and today's spending (for the spending limits in section 4), and the purchase confirmations Google Play returns, so a purchase is given once and one-time purchases can be restored.</li>
+  <li><strong>Your answer to the age question</strong>, kept only as an age range (see section 8).</li>
+  <li><strong>Purchase records:</strong> what you own, what you spent GOLD BARS on, this month's and today's spending (for the spending limits in section 5), and the purchase confirmations Google Play returns, so a purchase is given once and one-time purchases can be restored.</li>
+  <li><strong>Reward records:</strong> how many doubles, refuels and box skips you used today, a claim record for each reward (so it is given once, even if the app closes during a video) and whether this save has AD-FREE x2.</li>
   <li><strong>A local gameplay log:</strong> a small file of game events (for example "run ended, 1,400 m, 32 zombies") with a random session number that changes every launch. It stays on your device and is not uploaded.</li>
+  <li><strong>Your play stats choice:</strong> your SHARE PLAY STATS setting and whether the PLAY STATS card was shown. (The random statistics id that Google's analytics library keeps on the phone goes out with the play stats, and switching them off resets it: section 6.)</li>
 </ul>
 <p><strong>Backups.</strong> Android can back up app data to your Google Account (Android's backup setting) so your progress survives a new phone. Google runs that backup under your Google Account and your device settings. We have no access to it.</p>
 <p><strong>Deleting it.</strong> Choosing <strong>NEW GAME</strong> in the game restarts the road and the bunker; your settings, named characters, gun cards, boxes, GOLD BARS and purchases are kept, so you don't lose what you earned or paid for. Uninstalling the game deletes all of the above from your device. You can also clear it in Android Settings &gt; Apps &gt; Last Gallon &gt; Storage &gt; Clear storage.</p>
@@ -56,34 +63,58 @@ collects very little.</p>
 <p>The game asks for no dangerous permissions (no location, camera, microphone, contacts or files). It uses:</p>
 <ul>
   <li><strong>Vibration</strong>, for optional haptic feedback (can be turned off in the pause menu).</li>
-  <li><strong>Google Play billing</strong>, to make purchases. Purchases go through the Google Play Store app on your phone. Google's billing library inside the game uses the <strong>internet and network state</strong> permissions to talk to Google Play about purchases; the game's own code sends nothing.</li>
+  <li><strong>Internet and network state</strong>, to load reward videos, for Google Play billing (Google's billing library inside the game uses them to talk to Google Play about purchases) and for the play stats (Google's analytics library sends them: section 6). The game's own code makes no network request.</li>
+  <li><strong>Install referrer</strong>, a Google Play binding that Google's analytics library uses to learn which store link or campaign installed the game (section 6).</li>
+  <li><strong>Google Play billing</strong>, to make purchases. Purchases go through the Google Play Store app on your phone.</li>
+  <li><strong>Advertising ID</strong>, the permission the Google Mobile Ads SDK adds (see section 4).</li>
   <li><strong>Motion sensors</strong> (no permission needed), only if you turn on tilt steering. Sensor readings are used on the device and never stored or sent anywhere.</li>
 </ul>
 
-<h2>4. Purchases</h2>
-<p>The game's SHOP sells <strong>GOLD BARS</strong> packs and two one-time <strong>starters</strong> (an ELITE card you pick, plus GOLD BARS). Every purchase is processed by <strong>Google Play</strong> under your Google Account, under Google's own terms and privacy policy. We never receive your card or bank details, name or email address.</p>
+<h2>4. Advertising (reward videos only)</h2>
+<p>The game is free. Its only ads are <strong>optional reward videos</strong> from <strong>Google AdMob</strong> (Google LLC / Google Ireland Limited), which shows them for us. A video plays only when you tap <strong>WATCH AD</strong>, for a reward the button names: double a drive's or a horde night's scrap, refuel and keep going, call the army patrol, or open a box sooner. There are no ads between runs, no banners and none on the first stage. You turn a video down just by carrying on. <strong>AD-FREE x2</strong>, a one-time purchase, gives every reward-video bonus without the video, and then the game loads no ads at all.</p>
 <ul>
-  <li><strong>Checked on your device.</strong> Google Play sends the game a purchase confirmation (the product, an order number and a purchase token). The game checks it on your phone and keeps it there, so each purchase is given once and the starters can come back with <strong>RESTORE PURCHASES</strong>. There is no game server: nothing about your purchases is sent to us.</li>
-  <li><strong>GOLD BARS live in your save.</strong> Uninstalling the game or clearing its storage deletes them (unless Android's backup brings the save back). Starters can be restored; GOLD BARS bought before cannot.</li>
-  <li><strong>No random paid items.</strong> Money buys only GOLD BARS packs and the starters, each with a fixed, stated content. GOLD BARS never buy boxes. Boxes are earned by playing, and what is inside a box is fixed when you earn it. Boxes arrive sealed: you can peek inside any time, and the full contents are always shown before any GOLD BARS are spent on a box. The odds are shown in the game and at <a href="../odds/">Box odds</a>.</li>
-  <li><strong>Spending limits.</strong> Adults can spend up to US$120 a day. Players aged 13-17, and anyone who prefers not to give a birth year, can spend up to US$35 a month (US$70 at 16-17), and only inside the SHOP. Anyone can set a lower monthly limit under SPENDING in the SHOP: lowering it works at once, raising it waits 3 days. A calm check-in appears at US$100 and US$250 in a month. Amounts are the US dollar prices Google Play lists; your store shows your own currency.</li>
-  <li><strong>Quiet times.</strong> The game offers nothing to buy in your first two sessions, during a drive, a run or a horde night, or after a lost night or a pulled-out run until your next win. There are no pop-up offers and no countdowns on offers.</li>
+  <li><strong>Your age decides the ads.</strong> The game asks for a birth year before any ad (section 8). Players under 13 see <strong>no ads</strong>: the ad service is never started for them. Every ad the game asks for is <strong>non-personalised</strong>, at any age: it is not chosen from your interests or from what you do in other apps. Players aged 13-17, and anyone who prefers not to give a birth year, get Google's <strong>teen treatment</strong>: their ads are requested as for someone under the age of consent, but not as for a child. They see <strong>no ads</strong> until we have checked on a phone that such a request sends no advertising ID; after that check, their ads are served without it. Ads are limited to Google's PG rating, with sensitive categories such as gambling blocked.</li>
+  <li><strong>What Google receives:</strong> to show ads, prevent fraud and measure performance, the Google Mobile Ads SDK sends Google your device's advertising ID (players 18 or older only), its app set ID and, if there are any, identifiers of the accounts signed in on the phone; basic device and app information (model, Android version, app version, language); your IP address (from which Google may estimate your general location); how the app and its ads are used (app launches, taps, which ads were shown or watched); and diagnostics about the performance of the app and the SDK (for example launch time and hangs). This follows Google's own list for the SDK (<a href="https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure">Google Mobile Ads SDK: data disclosure</a>). Google's use of this data is described at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a> and in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+  <li><strong>Your consent and choices.</strong> Before the ad service starts, the game asks Google's consent service whether your consent is needed where you are. In the EEA, the UK and Switzerland it shows Google's consent form, and the ad service is not started and no ad is requested until you have answered it (if the form cannot load, for example offline, the game asks again later). You can change your choice any time with <strong>PRIVACY SETTINGS</strong> in the bunker's settings (and on the game's privacy policy screen once the game has checked with Google that session). In US states with privacy laws the same button opts you out of the "sale" or "sharing" of data for targeted ads. On any Android phone you can also reset or delete your advertising ID in Android Settings &gt; Privacy &gt; Ads (or Google &gt; Ads).</li>
+  <li><strong>Age Signals.</strong> The game does not use Google Play's Age Signals: it never asks Google Play for your age range, and it never stores or sends it.</li>
 </ul>
 
-<h2>5. Children</h2>
-<p>Last Gallon contains cartoon-style violence against zombies and blood effects and is <strong>not directed at children under 13</strong>. It is not part of Google Play's Families programme. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the game, contact us and we will help delete it.</p>
-<p><strong>The age question.</strong> The first time you open the SHOP (or tap a GOLD BARS price) the game asks for a birth year; you can choose not to say. The year itself is <strong>never saved or sent anywhere</strong>: the game keeps only an age range on your device, to apply the spending limits above. If the answer is under 13, the SHOP closes for 30 days and the game keeps only that date.</p>
+<h2>5. Purchases</h2>
+<p>The game's SHOP sells <strong>GOLD BARS</strong> packs, two one-time <strong>starters</strong> (an ELITE card you pick, plus GOLD BARS) and <strong>AD-FREE x2</strong> (one time: every reward-video bonus without the video). Every purchase is processed by <strong>Google Play</strong> under your Google Account, under Google's own terms and privacy policy. We never receive your card or bank details, name or email address.</p>
+<ul>
+  <li><strong>Checked on your device.</strong> Google Play sends the game a purchase confirmation (the product, an order number and a purchase token). The game checks it on your phone and keeps it there, so each purchase is given once and the starters and AD-FREE x2 can come back with <strong>RESTORE PURCHASES</strong>. There is no game server. The play stats (section 6) include which product you looked at or bought and the price Google Play reports, never your payment details, order number or purchase token.</li>
+  <li><strong>GOLD BARS live in your save.</strong> Uninstalling the game or clearing its storage deletes them (unless Android's backup brings the save back). Starters and AD-FREE x2 can be restored; GOLD BARS bought before cannot.</li>
+  <li><strong>No random paid items.</strong> Money buys only GOLD BARS packs, the starters and AD-FREE x2, each with a fixed, stated content. GOLD BARS never buy boxes. Boxes are earned by playing, and what is inside a box is fixed when you earn it. Boxes arrive sealed: you can peek inside any time, and the full contents are always shown before any GOLD BARS are spent on a box. The odds are shown in the game and at <a href="../odds/">Box odds</a>.</li>
+  <li><strong>Spending limits.</strong> Adults can spend up to US$120 a day. Players aged 13-17, and anyone who prefers not to give a birth year, can spend up to US$35 a month (US$70 at 16-17), and only inside the SHOP. Anyone can set a lower monthly limit under SPENDING in the SHOP: lowering it works at once, raising it waits 3 days. A calm check-in appears at US$100 and US$250 in a month. Amounts are the US dollar prices Google Play lists; your store shows your own currency.</li>
+  <li><strong>Offers, ads and quiet times.</strong> Nothing is offered for sale during a drive, a run or a horde night, or on a result screen. Reward videos play only when you tap WATCH AD: on a result screen (to double that scrap), when the car runs out of fuel, before a horde night, in the bunker (x2 COLLECT, and drives you could not double offline) and on a box's timer. A WATCH AD button never has a countdown, and you turn it down just by carrying on. There are no ads between runs, and none on the first stage. In the bunker the game shows at most one offer card a session, and none before your first stage is cleared. Players under 18, and anyone who prefers not to give a birth year, get no offer cards they did not ask for and see only non-personalised ads; players under 13 see no ads. NOT NOW or Back always closes an offer card, and offers never have countdowns. AD-FREE x2, a one-time purchase, gives every reward-video bonus without the video.</li>
+</ul>
 
-<h2>6. Sharing and selling</h2>
-<p>We don't sell your personal information. The game sends nothing about you to us. When you buy something, Google Play processes the payment under your Google Account to provide that service.</p>
+<h2>6. Play stats (Google Analytics for Firebase)</h2>
+<p>From version 0.4.2 the game sends us game statistics through <strong>Google Analytics for Firebase</strong>, a Google service (Google LLC / Google Ireland Limited) that stores them for us as our service provider. They are tied to a random statistics id, not to your name or account.</p>
+<ul>
+  <li><strong>What is sent:</strong> a random statistics id made on your phone (never your name, Google account, email address, phone number or advertising ID), the app version, your phone's model, Android version and language, your country (worked out by Google from your connection, never from GPS), which store link or campaign installed the game, when and how long you play, the stages, GALLON RUNs, horde nights and town fights you play and how they end, what you upgrade, build, open or buy in the game, which reward videos were offered, watched or not available (and why), the SHOP products you looked at and your in-app purchases (the product, and its price as Google Play reports it; never your payment details), whether this save has AD-FREE x2 or the founder gift, and your age range as a bucket (18+ or not said; never the year).</li>
+  <li><strong>Why:</strong> only to see how many players come back, where the game is too hard or too easy, and why the ads and the SHOP earn what they do. We never sell the statistics and never use them for advertising; the advertising ID is never collected for them.</li>
+  <li><strong>Who is measured:</strong> players under 18 never: if your answer to the age question is under 18, the statistics stay off (under 13, for good). Nothing is sent before you have answered the age question. In the EEA, the UK and Switzerland the statistics are off until you say yes on Google's consent form (the same form as for the ads; PRIVACY SETTINGS re-opens it); a player who never sees that form in the game (for example with AD-FREE x2) is not measured there. Where the game cannot tell your country (or only from the phone's language setting) they are off unless you switch them on. Everywhere else they are on: the game shows a PLAY STATS card once, before anything is sent, and <strong>SHARE PLAY STATS</strong> in the bunker's settings switches them off at once and resets the id.</li>
+  <li><strong>How long:</strong> Google keeps the statistics for 14 months, then deletes them. They carry no name, account or email address, so we cannot find one player's statistics to delete them sooner; switching them off resets the id, so nothing sent later is linked to what was sent before. Google's use of this data: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</li>
+</ul>
 
-<h2>7. Your rights</h2>
-<p>Depending on where you live (for example under the EU/UK GDPR or the California CCPA/CPRA), you may have the right to access, correct or delete personal data about you, to object to or restrict its use, to withdraw consent and to complain to your local data protection authority. The data described here stays on your device, and you control it as described in section 2. Your Google Play purchase history is kept by Google under your Google Account (play.google.com, Payments and subscriptions). For anything else, email <a data-fill="email" href="mailto:s.koekemoer25@gmail.com">s.koekemoer25@gmail.com</a>. We will answer within 30 days.</p>
+<h2>7. Ratings and feedback</h2>
+<p>Google Play's rating card and <strong>RATE LAST GALLON</strong> (in the bunker's settings) are Google Play's: a rating or review you leave goes to Google Play under your Google Account, and the game never sees it. <strong>SEND FEEDBACK</strong> opens your own mail app. If you email us, we get your email address and what you write. We use them only to answer you and delete them when you ask.</p>
 
-<h2>8. Changes</h2>
-<p>If an update starts handling data in a new way (for example ads or analytics), we will update this page and the effective date above before that update is released. The in-game copy of this policy (PRIVACY POLICY on the title screen and in the pause menu) changes with it.</p>
+<h2>8. Children</h2>
+<p>Last Gallon contains cartoon-style violence against zombies and blood effects and is <strong>not directed at children under 13</strong>. It is not part of Google Play's Families programme. We do not knowingly collect personal information from children: players under 13 see no ads. If you believe a child has provided personal information through the game, contact us and we will help delete it.</p>
+<p><strong>The age question.</strong> The game asks for a birth year after a drive (on a new game, the first one) or the first time you open the SHOP, whichever comes first; you can choose not to say. No reward video is offered before you answer. The year itself is <strong>never saved or sent anywhere</strong>: the game keeps only an age range on your device, to apply the spending limits above and to decide whether and how you may see ads (section 4). If the answer is under 13, the SHOP closes for 30 days, and the ads stay off for good: the game keeps only that date and an under-13 mark. Players under 18 are never measured: if the answer is under 18, the play stats stay off (section 6).</p>
 
-<h2>9. Contact</h2>
+<h2>9. Sharing and selling</h2>
+<p>We don't sell your personal information. Google AdMob receives the ad data in section 4 to show and measure the reward videos, and when you buy something, Google Play processes the payment under your Google Account to provide that service. Google processes the play stats for us as our service provider (Google Analytics for Firebase, section 6); it does not use them for its own advertising, and we never sell them.</p>
+
+<h2>10. Your rights</h2>
+<p>Depending on where you live (for example under the EU/UK GDPR, the California CCPA/CPRA or South Africa's POPIA, the Protection of Personal Information Act), you may have the right to access, correct or delete personal data about you, to object to or restrict its use, to withdraw consent and to complain to your local data protection authority. In South Africa that is the <strong>Information Regulator</strong> (<a href="https://inforegulator.org.za/">inforegulator.org.za</a>). Play stats: switch them off any time with SHARE PLAY STATS in the bunker's settings; the id is reset at once, so nothing sent later is linked to what was sent before. Google deletes the statistics after 14 months; they carry no name, account or email address, so we cannot find one player's statistics to delete them sooner (section 6). Feedback emails: section 7. For ad data, use PRIVACY SETTINGS in the game and your phone's advertising ID controls (section 4), or Google's own tools. Everything else described here stays on your device, and you control it as described in section 2. Your Google Play purchase history is kept by Google under your Google Account (play.google.com, Payments and subscriptions). For anything else, email <a data-fill="email" href="mailto:s.koekemoer25@gmail.com">s.koekemoer25@gmail.com</a>. We will answer within 30 days.</p>
+
+<h2>11. Changes</h2>
+<p>If an update starts handling data in a new way (for example new ads or analytics), we will update this page and the effective date above before that update is released. The in-game copy of this policy (PRIVACY POLICY on the title screen and in the pause menu) changes with it.</p>
+
+<h2>12. Contact</h2>
 <p><span data-fill="name">Studio420</span>, <span data-fill="country">South Africa</span>. Email: <a data-fill="email" href="mailto:s.koekemoer25@gmail.com">s.koekemoer25@gmail.com</a></p>
 
 <footer><a href="../">Last Gallon</a> &nbsp;·&nbsp; <a href="../odds/">Box odds</a></footer>

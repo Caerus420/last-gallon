@@ -18,7 +18,7 @@
     {
       "type": "footlocker",
       "shown": "FOOTLOCKER",
-      "unlock_hours": 3,
+      "unlock_hours": 2,
       "guns_only": false,
       "lines": [
         {
@@ -308,7 +308,7 @@
     {
       "type": "toolbox",
       "shown": "TOOLBOX",
-      "unlock_hours": 8,
+      "unlock_hours": 4,
       "guns_only": false,
       "lines": [
         {
@@ -598,7 +598,7 @@
     {
       "type": "gun_case",
       "shown": "GUN CASE",
-      "unlock_hours": 12,
+      "unlock_hours": 6,
       "guns_only": true,
       "lines": [
         {
@@ -770,7 +770,7 @@
     {
       "type": "army_crate",
       "shown": "ARMY CRATE",
-      "unlock_hours": 24,
+      "unlock_hours": 12,
       "guns_only": false,
       "lines": [
         {
